@@ -7,7 +7,7 @@ export const fetchPosts = createAsyncThunk(
   async (_, thunkAPI) => {
     const { rejctWithValue } = thunkAPI;
     try {
-      const res = await fetch("http://localhost:5000/posts");
+      const res = await fetch("https://my-json-server.typicode.com/melmesery/CRUD_JSON/posts");
       const data = await res.json();
       return data;
     } catch (error) {
@@ -21,7 +21,7 @@ export const deletePosts = createAsyncThunk(
   async (id, thunkAPI) => {
     const { rejctWithValue } = thunkAPI;
     try {
-      await fetch(`http://localhost:5000/posts/${id}`, {
+      await fetch(`https://my-json-server.typicode.com/melmesery/CRUD_JSON/posts/${id}`, {
         method: "DELETE",
       });
       return id;
@@ -38,7 +38,7 @@ export const insertPosts = createAsyncThunk(
     const auth = getState();
     item.userId = auth.id;
     try {
-      const res = await fetch("http://localhost:5000/posts", {
+      const res = await fetch("https://my-json-server.typicode.com/melmesery/CRUD_JSON/posts/posts", {
         method: "POST",
         body: JSON.stringify(item),
         headers: {
