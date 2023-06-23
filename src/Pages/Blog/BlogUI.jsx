@@ -20,8 +20,8 @@ const BlogUI = ({ blogs, deleteBlog }) => {
         }
       );
       if (response.ok) {
-        localStorage.clear();
         window.location.href = "/";
+        localStorage.clear();
       } else {
         toast.error("Unable to log out");
       }
@@ -31,7 +31,9 @@ const BlogUI = ({ blogs, deleteBlog }) => {
   };
   return (
     <div>
-      <button onClick={handleLogout} className={styles.logout}>Log Out</button>
+      <button onClick={handleLogout} className={styles.logout}>
+        Log Out
+      </button>
       <Link to="/blog/add" className={styles.btn_productLink}>
         <img src={add} />
       </Link>

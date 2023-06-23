@@ -25,43 +25,6 @@ const Blog = () => {
     loadData();
   }, []);
 
-  // const deleteBlog = async (id) => {
-  //   try {
-  //     if (
-  //       Swal.fire({
-  //         title: "Are you sure?",
-  //         text: "You won't be able to revert this!",
-  //         icon: "warning",
-  //         showCancelButton: true,
-  //         confirmButtonColor: "#3085d6",
-  //         cancelButtonColor: "#d33",
-  //         confirmButtonText: "Yes, delete it!",
-  //       }).then((result) => {
-  //         if (result.isConfirmed) {
-  //           Swal.fire("Deleted!", "Your file has been deleted.", "success");
-  //         }
-  //       })
-  //     ) {
-  //       const response = await axios.delete(
-  //         `${import.meta.env.VITE_BASE_URL}/blog/${id}`,
-  //         {
-  //           headers: {
-  //             authorization: `Believe__${localStorage.getItem("token")}`,
-  //           },
-  //         }
-  //       );
-  //       if (response.data.message == "Not Authenticated") {
-  //         toast.error("Not Authorized");
-  //       } else {
-  //         toast.success(response.data.message);
-  //         loadData();
-  //       }
-  //     }
-  //   } catch (error) {
-  //     toast.error(error.message);
-  //   }
-  // };
-
   const deleteBlog = async (id) => {
     try {
       const result = await Swal.fire({
