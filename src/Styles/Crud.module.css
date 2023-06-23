@@ -1,0 +1,72 @@
+.crud {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  background: #f0f0f0;
+}
+
+.crud_form {
+  padding: 40px 15px;
+  background: #fff !important;
+}
+
+.crud_form input {
+  display: block;
+  width: 400px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border: rgba(0, 0, 0, 0.129) solid 1px !important;
+  outline: none !important;
+  background: rgba(0, 0, 0, 0.129) !important;
+  font-size: 16px;
+  color: #000 !important;
+  cursor: pointer;
+}
+
+.crud_form input:hover {
+  background: rgba(255, 255, 255, 0.123) !important;
+}
+
+.crud_form input::placeholder {
+  color: #000 !important;
+  font-size: 15px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
+
+.crud input[type="submit"] {
+  display: block;
+  padding: 5px !important;
+  width: 400px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none !important;
+  background: linear-gradient(to right, #42275a, #734b6d) !important;
+  color: #fff !important;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+  border-radius: 0;
+}
+
+.back {
+  display: block;
+  width: 120px;
+  background: rgba(0, 0, 0, 0.215);
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 auto !important;
+  text-align: center;
+  margin-top: 100px !important;
+}
+
+.back:hover {
+  color: #fff;
+  opacity: 0.9;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}

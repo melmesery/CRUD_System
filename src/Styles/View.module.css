@@ -1,0 +1,63 @@
+.view {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  color: #ffffffca;
+  cursor: pointer;
+  background: #f0f0f0;
+}
+
+.card {
+  width: 400px;
+  align-content: center;
+  margin: 0 auto;
+  padding: 15px;
+  background: #fff !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.card_data {
+  border: rgba(0, 0, 0, 0.129) solid 1px !important;
+  margin-bottom: 15px;
+  border-radius: 0 !important;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.129) !important;
+  color: #000 !important;
+}
+
+.card h6 {
+  color: #000;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card span {
+  font-size: 15px;
+  width: 150px !important;
+}
+
+.view_back {
+  display: block;
+  width: 120px;
+  background: rgba(0, 0, 0, 0.215);
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 auto !important;
+  text-align: center;
+  margin-top: 100px !important;
+  border: none;
+}
+
+.vieW {
+  text-decoration: none !important;
+}
+
+.view_back:hover {
+  color: #fff;
+  opacity: 0.9
+}
