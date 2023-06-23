@@ -20,8 +20,8 @@ const BlogUI = ({ blogs, deleteBlog }) => {
         }
       );
       if (response.ok) {
-        window.location.href = "/";
         localStorage.clear();
+        window.location.href = "/";
       } else {
         toast.error("Unable to log out");
       }
