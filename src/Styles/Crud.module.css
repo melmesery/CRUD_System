@@ -3,8 +3,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  letter-spacing: 1.5px;
-  background: #f0f0f0;
+  letter-spacing: 1.5px; 
 }
 
 .crud_form {

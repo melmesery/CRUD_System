@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import * as styles from "../../Styles/Blog.module.css";
-import add from "../../Assets/add.png";
+import * as styles from "../../Styles/Blog.module.css"; 
 import { toast } from "react-toastify";
 
 const BlogUI = ({ blogs, deleteBlog }) => {
@@ -31,11 +30,11 @@ const BlogUI = ({ blogs, deleteBlog }) => {
   };
   return (
     <div>
-      <button onClick={handleLogout} className={styles.logout}>
-        Log Out
+      <button onClick={handleLogout} className={`${styles.logout} shadow`}>
+        Logout
       </button>
       <Link to="/blog/add" className={styles.btn_productLink}>
-        <img src={add} />
+        <div className={styles.add}>Add</div>
       </Link>
       <table className={`${styles.styled_table} shadow`}>
         <thead>
@@ -53,7 +52,9 @@ const BlogUI = ({ blogs, deleteBlog }) => {
               <tr key={blog._id}>
                 <th scope="row">{index + 1}</th>
                 <td className={styles.data}>{blog.content}</td>
-                <td className={styles.data}>{blog.addedBy.userName}</td>
+                <td className={`${styles.data} text-capitalize`}>
+                  {blog.addedBy.userName}
+                </td>
                 <td className={styles.data}>{blog.year}</td>
                 <td>
                   <Link to={`/blog/update/${blog._id}`}>

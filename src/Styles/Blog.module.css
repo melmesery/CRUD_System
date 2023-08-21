@@ -32,7 +32,7 @@
 .styled_table tbody tr {
   border-bottom: #4f99d53c solid 1px;
   font-size: 18px;
-} 
+}
 
 .btn {
   border: none !important;
@@ -57,13 +57,13 @@
 
 .btn_delete {
   color: red !important;
-} 
+}
 
 .btn_product {
   display: block !important;
   float: right;
   font-size: 20px !important;
-  font-weight: 600 !important; 
+  font-weight: 600 !important;
   margin-bottom: 10px;
   color: #fff !important;
   border-radius: 0 !important;
@@ -101,5 +101,13 @@
 .logout {
   background: red;
   border: none;
-  color: #fff;  
+  color: #fff; 
+  width: 80px;
+}
+
+.add {
+  background: rgba(8, 2, 2, 0.074);
+  width: 65px;
+  text-align: center;
+  margin: 8px 0; 
 }
